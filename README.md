@@ -1,16 +1,105 @@
-# React + Vite
+# Frontend Trainee Dashboard Assignment (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project is a **React-based dynamic dashboard** built for the frontend trainee assignment, set up using Vite.
 
-Currently, two official plugins are available:
+The dashboard has multiple categories, each containing widgets. Users can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **View** widgets under each category  
+- **Add new widgets** dynamically  
+- **Remove widgets** using the cross (✕) icon  
+- **Search** widgets across all categories  
 
-## React Compiler
+The data is dynamically loaded from `widgets.json`, and **React Context API** is used for local state management.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Structure
+```text
+dashboard-assignment/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Dashboard.js
+│   ├── context/
+│   │   └── DashboardContext.js
+│   ├── data/
+│   │   └── widgets.json
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── README.md
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## JSON Structure
+
+`widgets.json`:
+
+```json
+{
+  "CSPM Executive dashboard": [
+    {
+      "id": 1,
+      "title": "CSPM Overview",
+      "content": "Summary of CSPM dashboard metrics and status"
+    },
+    {
+      "id": 2,
+      "title": "Compliance Check",
+      "content": "Details about compliance checks and results"
+    }
+  ],
+  "CWPP dashboard": [
+    {
+      "id": 3,
+      "title": "CWPP Overview",
+      "content": "Summary of CWPP dashboard metrics and status"
+    },
+    {
+      "id": 4,
+      "title": "Threat Detection",
+      "content": "Details of detected threats and alerts"
+    }
+  ],
+  "Registry scan": [
+    {
+      "id": 5,
+      "title": "Registry Overview",
+      "content": "Summary of registry scan results"
+    },
+    {
+      "id": 6,
+      "title": "Vulnerable Entries",
+      "content": "List of registry entries flagged as vulnerable"
+    }
+  ]
+}
+
+```bash
+git clone <your-repo-link>
+cd Dashboard-app
+npm install
+npm run dev
+```
+
+## How to Use the Dashboard
+
+- View all categories and widgets
+- Add new widgets using "+ Add Widget"
+- Remove widgets using the cross (✕) icon
+- Search widgets using the search input
+
+## Notes
+
+Only the cross (✕) icon removal method is implemented, as per assignment instructions.
+
+The dashboard is fully dynamic; updating widgets.json will automatically reflect changes in the UI.
+
+React Context API is used for local state management.
+
+## Author
+
+Simra Anjum
