@@ -16,7 +16,7 @@ The data is dynamically loaded from `widgets.json`, and **React Context API** is
 
 ## Project Structure
 ```text
-dashboard-assignment/
+Dashboard-app/
 ├── public/
 │   └── index.html
 ├── src/
