@@ -1,0 +1,38 @@
+{
+  "CSPM Executive dashboard": [
+    {
+      "id": 1,
+      "title": "CSPM Overview",
+      "content": "Summary of CSPM dashboard metrics and status"
+    },
+    {
+      "id": 2,
+      "title": "Compliance Check",
+      "content": "Details about compliance checks and results"
+    }
+  ],
+  "CWPP dashboard": [
+    {
+      "id": 3,
+      "title": "CWPP Overview",
+      "content": "Summary of CWPP dashboard metrics and status"
+    },
+    {
+      "id": 4,
+      "title": "Threat Detection",
+      "content": "Details of detected threats and alerts"
+    }
+  ],
+  "Registry scan": [
+    {
+      "id": 5,
+      "title": "Registry Overview",
+      "content": "Summary of registry scan results"
+    },
+    {
+      "id": 6,
+      "title": "Vulnerable Entries",
+      "content": "List of registry entries flagged as vulnerable"
+    }
+  ]
+}
