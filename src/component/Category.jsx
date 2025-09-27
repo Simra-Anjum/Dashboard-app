@@ -22,7 +22,7 @@ const Category = ({ name, widgets }) => {
         ))}
 
 
-        <div className="bg-white rounded-lg w-[32%] min-h-[220px] px-3 py-4 shadow-lg flex items-center justify-center transform transition duration-300 hover:scale-105">
+        <div className="bg-white rounded-lg w-full sm:w-[48%] lg:w-[32%] min-h-[220px] px-3 py-4 shadow-lg flex items-center justify-center transform transition duration-300 hover:scale-105">
           {!showForm ? (
            <button
   onClick={() => setShowForm(true)}
