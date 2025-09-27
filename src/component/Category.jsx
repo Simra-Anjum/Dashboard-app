@@ -12,7 +12,7 @@ const Category = ({ name, widgets }) => {
   );
 
   return (
-    <div>
+    <div className="py-3">
       <h2 className="text-md font-bold py-2">{name}</h2>
 
       <div className="flex flex-wrap gap-4">
