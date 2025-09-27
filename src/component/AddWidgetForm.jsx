@@ -21,7 +21,7 @@ const AddWidgetForm = ({ closeForm }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-2 w-full text-sm"
+      className="flex flex-col gap-2 w-full text-sm md:w-1/2 mx-auto"
     >
   
       <input
