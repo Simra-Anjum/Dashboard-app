@@ -36,7 +36,7 @@ const Dashboard = () => {
   </div>
 
  
-  <div className="font-semibold px-4 md:px-10 mt-6">
+  <div className="font-semibold px-4 md:px-10">
     {Object.keys(dashboardData).map((categoryName) => (
       <Category
         key={categoryName}
